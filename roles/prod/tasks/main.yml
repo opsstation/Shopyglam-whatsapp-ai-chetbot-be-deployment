@@ -22,13 +22,15 @@
     accept_hostkey: yes
 
 # 🐳 Build image (equivalent to --no-cache)
-- name: Build Docker image
+- name: Build Docker image using Dockerfile-prod
   community.docker.docker_image:
     name: "{{ image_name }}"
     tag: "{{ image_tag }}"
     build:
       path: "{{ repo_dir }}"
+      dockerfile: Dockerfile-prod
       nocache: yes
+      pull: yes
     source: build
 
 # 🛑 Remove old containers if exist
