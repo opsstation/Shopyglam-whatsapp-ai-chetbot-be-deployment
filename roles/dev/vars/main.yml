@@ -1,0 +1,12 @@
+repo_ssh_url: "git@github.com:Shopyglam/whatsapp-ai-chatbot-be.git"
+repo_dir: "/root/whatsapp-ai-chatbot-be"
+repo_branch: "prod"
+
+image_name: "whatsapp-chatbot-be"
+image_tag: "latest"
+
+fastapi_container: "chatbot-be-fastapi"
+socket_container: "chatbot-be-socketio"
+celery_container: "chatbot-be-celery"
+
+dev_env_file: ".env.dev"

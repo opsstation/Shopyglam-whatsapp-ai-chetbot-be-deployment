@@ -1,0 +1,4 @@
+- hosts: production
+  become: yes
+  roles:
+    - prod
