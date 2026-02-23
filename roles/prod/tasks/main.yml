@@ -12,7 +12,7 @@
     state: started
     enabled: yes
 
- 🔐 Clone repo (replaces rm -rf + git clone)
+# 🔐 Clone repo (replaces rm -rf + git clone)
 - name: Clone WhatsApp chatbot repository
   ansible.builtin.git:
     repo: "{{ repo_ssh_url }}"
